@@ -39,7 +39,9 @@ MarryPoppinsTote(const MarryPoppinsTote & other){
   }
 
 void place(int item){
-
+  toteSize = toteSize + 1;
+  tote = new int[toteSize];
+  item = tote[tote.size];
 
   }
 
@@ -56,13 +58,9 @@ int search(int item){
   }
 
 int reach(){
-  int randomNumber;
-  if(tote == NULL){
-    throw 1;
-  }else{
-  randomNumber = rand() % tote.size;
-  return tote[randomNumber];
-  }
+
+
+
 }
 
 MarryPoppinsTote& operator=(const MarryPoppinsTote & other){
