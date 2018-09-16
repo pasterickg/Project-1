@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 class MarryPoppinsTote{
@@ -41,10 +40,19 @@ MarryPoppinsTote(const MarryPoppinsTote & other){
 
 void place(int item){
 
+
   }
 
 int search(int item){
-  for(int i = 0; i<tote.size )
+  int count = 0;
+  for(int i = 0; i<tote.size; i++ ){
+      if(item == tote[i]){
+        count = count +1;
+      }else{
+        return 0;
+      }
+
+    }
 
   }
 
@@ -57,11 +65,3 @@ int reach(){
 MarryPoppinsTote& operator=(const MarryPoppinsTote & other){
 
   }
-
-friend ostream& operator<<(ostream& os, const MarryPoppinsTote & me){
-
-}
-
-
-
-}
